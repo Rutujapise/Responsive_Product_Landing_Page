@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Web</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <marquee> 🔥Electric vibe Music Festival 2025🔥 </marquee>
+    <div class="barcode">
+        <div class="bar" style="--i:1;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:5;"></div>
+      </div>
+        <div class="ButtonAnu">
+        <button>DJ Nova</button>
+        <button>Electric Beats</button>
+        <button>Synth storm</button>
+        <button>Lunar bass</button>
+        <button>GloWRiders</button>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h3>Standard</h3>
+            <p>$49</p>
+            <button class="Buy">Buy</button>
+        </div>
+        <div class="card">
+            <h3>VIP</h3>
+            <p>$99</p>
+            <button class="Buy">Buy</button>
+        </div>
+        <div class="card">
+            <h3>Backstage</h3>
+            <p>$149</p>
+            <button class="Buy">Buy</button>
+        </div>
+    </div>
+    <section>
+        <div class="Main">
+            <div class="header" onclick="toggleDropdown(this)">
+                <span class="menu-icon">🔻</span>
+                <h3 class="head">No Outside Food</h3>
+            </div>
+            <p class="para">Please refrain from bringing outside food or beverages to ensure safety and hygiene.</p>
+        </div>
+    
+        <div class="Main">
+            <div class="header" onclick="toggleDropdown(this)">
+                <span class="menu-icon">🔻</span>
+                <h3 class="head">Re-entry Policy</h3>
+            </div>
+            <p class="para">No re-entry allowed once you've exited the festival grounds.</p>
+        </div>
+    
+        <div class="Main">
+            <div class="header" onclick="toggleDropdown(this)">
+                <span class="menu-icon">🔻</span>
+                <h3 class="head">Photography</h3>
+            </div>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque.</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleDropdown(header) {
+            const mainDiv = header.parentElement;
+            mainDiv.classList.toggle('active');
+        }
+    </script>
+    <footer>&copy; Electric vibe Music Festival 2025</footer>
+</html>
