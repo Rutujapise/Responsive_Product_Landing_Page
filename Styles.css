@@ -166,6 +166,45 @@ header {
   transform: translateX(5px);
   box-shadow: 0px 5px 15px #9fa59f;
 }
+.box {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .content {
+      display: none;
+      padding: 12px;
+      background-color: #fff;
+      font-size: 14px;
+    }
+
+    input:checked  .content {
+      display: block;
+    }
+
+    input:checked ~ .label .arrow {
+      transform: rotate(180deg);
+    }
 
 /* Footer */
 footer {
@@ -238,6 +277,7 @@ footer {
   padding-top: 15px;
   color: #aaa;
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {

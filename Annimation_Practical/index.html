@@ -41,37 +41,38 @@
             <button class="Buy">Buy</button>
         </div>
     </div>
-    <section>
-        <div class="Main">
-            <div class="header" onclick="toggleDropdown(this)">
-                <span class="menu-icon">🔻</span>
-                <h3 class="head">No Outside Food</h3>
-            </div>
-            <p class="para">Please refrain from bringing outside food or beverages to ensure safety and hygiene.</p>
-        </div>
-    
-        <div class="Main">
-            <div class="header" onclick="toggleDropdown(this)">
-                <span class="menu-icon">🔻</span>
-                <h3 class="head">Re-entry Policy</h3>
-            </div>
-            <p class="para">No re-entry allowed once you've exited the festival grounds.</p>
-        </div>
-    
-        <div class="Main">
-            <div class="header" onclick="toggleDropdown(this)">
-                <span class="menu-icon">🔻</span>
-                <h3 class="head">Photography</h3>
-            </div>
-            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque.</p>
-        </div>
-    </section>
+    <div class="box food-rule">
+  <input type="checkbox" id="food-toggle">
+  <label class="label" for="food-toggle">
+    <span>No Outside Food</span>
+    <span class="arrow">🔻</span>
+  </label>
+  <div class="content">
+    Please refrain from bringing outside food or beverages to ensure safety and hygiene.
+  </div>
+</div>
 
-    <script>
-        function toggleDropdown(header) {
-            const mainDiv = header.parentElement;
-            mainDiv.classList.toggle('active');
-        }
-    </script>
+<div class="box reentry-rule">
+  <input type="checkbox" id="reentry-toggle">
+  <label class="label" for="reentry-toggle">
+    <span>Re-entry Policy</span>
+    <span class="arrow">🔻</span>
+  </label>
+  <div class="content">
+    No re-entry allowed once you've exited the festival grounds.
+  </div>
+</div>
+
+<div class="box photo-rule">
+  <input type="checkbox" id="photo-toggle">
+  <label class="label" for="photo-toggle">
+    <span>Photography</span>
+    <span class="arrow">🔻</span>
+  </label>
+  <div class="content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque.
+  </div>
+</div>
+
     <footer>&copy; Electric vibe Music Festival 2025</footer>
 </html>
